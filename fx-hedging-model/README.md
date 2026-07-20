@@ -26,18 +26,3 @@ A US-based exporter invoices a customer **€500,000, payable in 90 days**, pric
 **Reduction in USD margin volatility from the hedge: 15.0%**
 
 ![Simulation results](fx_margin_erosion_simulation.png)
-
-## Run it
-
-```bash
-pip install pandas numpy matplotlib
-python generate_fx_data.py        # creates eurusd_historical.csv
-python fx_hedging_monte_carlo.py  # prints the risk report, saves the chart
-```
-
-## Files
-
-- `generate_fx_data.py`: GARCH(1,1) mock EUR/USD history generator
-- `fx_hedging_monte_carlo.py`: calibration, Monte Carlo engine, risk report, chart
-- `index.html`: self contained interactive 3D visualization (no dependencies)
-- `eurusd_historical.csv` and `fx_margin_erosion_simulation.png`: generated outputs
