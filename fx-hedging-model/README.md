@@ -2,8 +2,6 @@
 
 Monte Carlo simulation of FX margin erosion on a EUR denominated trade receivable, comparing an unhedged position against a forward contract hedge.
 
-**Live interactive demo:** open `index.html` (or enable GitHub Pages on this repo → Settings → Pages → deploy from branch → your link becomes `https://<username>.github.io/fx-hedging-model/`). It renders 1,000 simulated EUR/USD paths in an interactive 3D view with a live hedge-ratio slider that recomputes every risk metric in real time.
-
 ## The scenario
 
 A US-based exporter invoices a customer **€500,000, payable in 90 days**, priced with an **8% profit margin** at quote-time spot. The USD cost base is fixed, so EUR depreciation over the 90-day window erodes, or wipes out, that margin at conversion.
